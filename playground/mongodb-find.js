@@ -6,7 +6,7 @@ const dbName = 'TodoApp';
 const client = new MongoClient(url, { useNewUrlParser: true });
 
 client.connect((err) => {
-    assert.equal(null, err);
+    assert.equal(null, err); // for testing if the err = null 
     console.log('Connected successfully to server');
 
     const db = client.db(dbName);
