@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
     "test-watch": "npx nodemon --exec \"npm test\""
+  },
+  "engines": {
+    "node": "10.6.0"
   },
   "author": "Mohammed khalid",
   "license": "ISC",
