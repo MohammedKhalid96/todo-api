@@ -60,6 +60,7 @@ app.get('/todos/:id', (req, res) => {
     });
 });
 
+// delete
 app.delete('/todos/:id', (req, res) => {
     var id = req.params.id;
 
@@ -78,6 +79,7 @@ app.delete('/todos/:id', (req, res) => {
     });
 });
 
+// update
 app.patch('/todos/:id', (req, res) => {
     var id = req.params.id;
     var body = _.pick(req.body, ['text', 'completed']);
