@@ -1,3 +1,5 @@
+require('./config/config');
+
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -17,7 +19,7 @@ var {User} = require('./models/user');
 //     console.log('Unable to save todo', e)
 // });
 
-const port = process.env.PORT || 3000; // for heroku
+const port = process.env.PORT; // for heroku
 var app = express();
 
 app.use(bodyParser.json());
