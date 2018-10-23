@@ -6,3 +6,4 @@ crypto-js
 jsonwebtoken(jwt)
 arrows function doesnot bind this keyword
 push Vs. concat
+make private routes
