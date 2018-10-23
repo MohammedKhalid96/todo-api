@@ -7,3 +7,5 @@ jsonwebtoken(jwt)
 arrows function doesnot bind this keyword
 push Vs. concat
 make private routes
+hash password
+bcryptjs
