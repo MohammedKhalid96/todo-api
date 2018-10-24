@@ -14,6 +14,10 @@ var schema = new mongoose.Schema({
     completedAt: {
         type: Date,
         default: Date.now
+    },
+    _creator: {
+        type: mongoose.Schema.Types.ObjectId ,
+        required: true
     }
 });
 
